@@ -14,4 +14,5 @@
 - Java
 - Spring Boot
 - MySql
+- Thymeleaf
   
