@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myfavorite</title>
+    <link rel="stylesheet" href="./javascript/styeel.css">
+    <style>
+       .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        align-content: center;
+       
+       }
+       .items img{
+        width: 250px;
+        height: 250px;
+       
+       }
+       .items{
+        background-color: white;
+        text-align: center;
+        font-size: medium;
+        color: black;
+     
+       }
+       .items button{
+        width: 100px;
+        height: 30px;
+        background-color: lightgreen;
+        color: aliceblue;
+        transition-duration: 0.2s;
+        border: none;
+        cursor: pointer;
+       }
+       .items button a{
+        text-decoration: none; 
+        color: white;
+       
+       }
+       .items{
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+        margin: 2%;
+       }
+       .items .info{
+        text-align: center;
+       }
+       .items .info p{
+        font-size: 20px;
+       }
+       .items .button:hover{
+        background-color: blue;
+        color: aliceblue;
+       }
+       #title {
+        text-align: center;
+        font-size: 50px;
+        color: black;
+          
+    }
+
+    </style>
+</head>
+<body>
+    <h2 id="title">My Favorites</h2>
+    <div class="container">
+        
+       <div class="items">
+        <div class="img">
+            <img src="resources\images\cap.jpg" alt="cap-img">
+        </div>
+        <div class="info">
+            <h2>Price:599/-</h2>
+            <p>This sport shirt is crafted from stretch pinpoint woven from American-grown
+                 Supima cotton and spandex. Specially treated to resist wrinkles. The button-down collar, 
+                a Brooks Brothers innovation, keeps you looking your best.</p>
+                <button type="submit" class="button"><a href="payment.html">Buy Now</a></button>
+                 <button type="submit" class="button">Remove</button>
+        </div>
+       </div>
+       <div class="items">
+        <div class="img">
+            <img src="resources\images\camera.jpg" alt="cap-img">
+        </div>
+        <div class="info">
+            <h2>Price:56599/-</h2>
+            <p>Sony Alpha 7IV Full-Frame Hybrid Camera (ILCE-7M4K) | 33 MP
+                 Mirrorless Camera, 10 FPS, 4K/60p, with 28 -70 mm Zoom Lens</p>
+                 <button type="submit" class="button"><a href="payment.html">Buy Now</a></button>
+                 <button type="submit" class="button" onclick="addtocard(`${i++}`)">Remove</button>
+        </div>
+       </div>
+       <div class="items">
+       <div class="img">
+        <img src="resources\images\iphone.jpg" alt="cap-img">
+       </div>
+        <div class="info">
+            <h2>Price:67599/-</h2>
+            <p>4 GB RAM | 64 GB ROM | Expandable Upto 1 TB
+                16.51 cm (6.5 inch) HD+ Display
+                50MP + 0.3MP | 5MP Front Camera
+                5000 mAh Lithium Ion Battery
+                Unisoc T612 Processor</p>
+                <button type="submit" class="button"><a href="payment.html">Buy Now</a></button>
+                <button type="submit" class="button">Remove</button>
+        </div>
+       </div>
+    </div>
+    <div class="sidebar">
+        <div class="head">My Favorite</div>
+        <div id="cardItem">Your Card Is Empty</div>
+        <div class="foot">
+            <h3>Total</h3>
+            <h2 id="total">$ 0.00</h2>
+           
+        </div>
+    </div>
+    <script src="./javascript/add.js"></script>
+</body>
+</html>

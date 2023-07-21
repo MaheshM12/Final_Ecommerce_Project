@@ -1,0 +1,135 @@
+.mcontainer{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    
+}
+#root {
+    float: left;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5%;
+    
+}
+.sidebar{
+    float: right;
+    width: 30%;
+    border-radius: 5px;
+    background-color:lightgray;
+    margin-left: 20px;
+    padding: 15px;
+    align-items: center;
+}
+.head{
+    background-color: rgb(241, 234, 163);
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: rgb(228, 152, 11);
+    display: flex;
+    align-items: center;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 0;
+    padding: 4% 0;
+    border-top: 1px solid black;}
+    .box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid goldenrod;
+        border-radius: 5px;
+        padding: 5%;
+        margin: 5%;
+    }
+    .img-box{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .images{
+      width: 100%;
+      height: 100%;
+      object-position: center;
+      object-fit: cover;
+    }
+    .bottom{
+        margin-top:1%;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+       
+    }
+    h2{
+        font-size: 20px;
+        color: red;
+
+    }
+    button{
+        width: 100%;
+        position: relative;
+        border: none;
+        border-radius: 5px;
+        background-color: goldenrod;
+        padding: 2% 2%;
+        color:black;
+        border: 1px solid black;
+        margin: 1% 1%;
+    }
+    button a{
+        text-decoration: none;
+        font-size: 15px;
+        margin: 5px 5px;
+        color:black;
+    }
+    button:hover{
+         background-color: greenyellow;
+          cursor: pointer;
+    }
+    .card-item{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 10px;
+        background-color: wheat;
+        border-bottom: 1px solid #aaa;
+        border-radius: 3px;
+        margin: 10px 10px;
+    }
+    .row-img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        border: 1px solid goldenrod;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+
+    }
+    .rowimg{
+      max-width: 43px;
+      max-height: 43px;
+      border-radius: 50%;
+    }
+    #button{
+        background-color: yellowgreen;
+        border: 1px solid black;
+        margin: 10px 10px;
+    }
+    #button:hover{
+        cursor: pointer;
+        background-color:red;
+    }
+
+

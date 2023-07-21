@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    <style>
+        *{
+            font-family: helvetica;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            border: none;
+            text-transform: capitalize;
+            transition: all 0.2s linear;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+            min-height: 100vh;
+            background-color: lightgreen;
+            padding-bottom: 70px;
+            margin-bottom: 20px;
+        }
+        .container form{
+            padding: 20px;
+            width: 700px;
+            background: #fff;
+            box-shadow: 0 5px 10px rgba(0,0, 0, 0.1);
+        }
+        .container form .row{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .container form .row .col{
+            flex: 1 1 250px;
+        }
+        .container form .row .col .title{
+            font-size: 20px;
+            color: black;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+        }
+        .container form .row .col .inputBox span{
+            margin-bottom: 5px;
+            display: block;
+        }
+        .container form .row .col .inputBox input{
+            width: 100%;
+            border: 1px solid black;
+            padding: 10px 15px;
+            font-size: 15px;
+            text-transform: none;
+        }
+        .container  #submit-btn{
+            color: white;
+            background-color: blue;
+            font-size: 15px;
+            width:auto;
+            height: auto;
+            margin: 10px 10px;
+            padding: 4px 4px;
+            align-content: center;
+            cursor: pointer;
+        }
+        .container #submit-btn:hover{
+            background-color: green;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+       <form action="">
+        <div class="row">
+            <div class="col">
+
+                <h3 classs="title">billing address</h3>
+                <div class="inputBox">
+                    <span>full name :</span>
+                    <input type="text" placeholder="first name">
+                </div>
+                <div class="inputBox">
+                    <span>email :</span>
+                    <input type="email" placeholder="example@gmail.com">
+                </div>
+                <div class="inputBox">
+                    <span>address:</span>
+                    <input type="text" placeholder="address">
+                </div>
+                <div class="inputBox">
+                    <span>city :</span>
+                    <input type="text" placeholder="city name">
+                </div>
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>state :</span>
+                        <input type="text" placeholder="state name">
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <span>zip code :</span>
+                    <input type="number" placeholder="123 456">
+                </div>
+            </div>
+            <div class="col">
+
+                <h3 classs="title">payment</h3>
+                <div class="inputBox">
+                    <span>cards accepted :</span>
+                    <img src="resources\images\pay_opt.png" alt="pay_opt">
+                </div>
+                <div class="inputBox">
+                    <span>name on card :</span>
+                    <input type="text" placeholder="mr. first name">
+                </div>
+               
+                <div class="inputBox">
+                    <span>credit card number :</span>
+                    <input type="number" placeholder="1111-2222-3333-4444">
+                </div>
+                <div class="inputBox">
+                    <span>exp month :</span>
+                    <input type="text" placeholder="january">
+                </div>
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>exp year :</span>
+                        <input type="number" placeholder="2023">
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <span>cvv :</span>
+                    <input type="text" placeholder="1234">
+                </div>
+            </div>
+        </div>
+        <input type="submit" value="proceed to check" id="submit-btn">
+       </form>
+       
+    </div>
+</body>
+</html>
